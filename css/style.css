@@ -1,0 +1,259 @@
+/* Fuentes de Google Fonts
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffe3d3;
+    font-family: 'Roboto', sans-serif;
+    color: #690404; /* Color de texto principal */    
+} 
+header{
+    background-color: #ffe3d3;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+
+header img{
+    width: 150px;
+}
+header nav{
+    display: flex;
+    gap: 60px;
+}
+header nav a{
+    color: #ff7f29;
+    text-decoration: none;
+    font-size: 19px;
+    transition: .3s ease;
+}
+header nav a:hover{
+    scale: 1.1;
+}
+
+main {
+    /* Dimensiones del contenedor main */
+    width: 80%;
+    height: 80vh; /* 80% de la altura de la ventana */
+    /* Posición del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+
+    /* Disposición del contenido de main */
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-image: url('../Img/Nekofi-escondido.jpg'); /*LOGO GATO ESCONDIDO*/
+    background-position: top;
+    background-size: cover;
+}
+
+/*IGUAL*/
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+/* HEADER */
+main h1 {
+    font-size: 40px;
+    color: #ff7f29; /* Color Nekofi*/
+}
+/* Estilos para el subtítulo */
+main h3 {
+    font-size: 33px;
+    color: #ffbaa8;
+    letter-spacing: 2px; /* Color letras de abajo */
+}
+/* Tamaño logo nekofi izquieda */
+.brand img {
+    width: 160px;
+}
+/* Menú de navegación ubicado en el header */
+/* Menú de navegación ubicado en el header */
+header .navBar a {
+    text-decoration: none;
+    color: #690707;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-inline-start: 50px;
+}
+/* Disposición del contenido de la sección 3 que incluye el slider */
+.seccion3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    color: rgb(252, 144, 21);
+}
+
+/* imagenes que pasan solas */
+.slideshow-container {
+    width: 60%;
+}
+
+/* Oculta las imágenes por default */
+.mySlides {
+    display: none;
+}
+
+/* Estilos comunes para las imágenes del slider */
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Animacion y efecto(no me gusta) */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.0s;
+}
+/* Definición de la animación de fundido */
+@keyframes fade {
+    from { opacity: 0.2; }
+    25% { opacity: 0.4; }
+    50% { opacity: 0.6; }
+    75% { opacity: 0.8; }
+    to { opacity: 1; }
+}
+.proyectos {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.proyectos .contenedor .titulo-seccion h3 {
+    text-align: center;
+}
+
+/* Galería de proyectos */
+.proyectos .galeria-proyectos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 34px;
+}
+
+.proyectos .galeria-proyectos .proyecto {
+    width: 32%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.proyectos .galeria-proyectos .proyecto img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 10px;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: 44444; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    width: 80%;
+    max-width: 700px;
+    transition: 2s;
+    border-radius: 10px;
+}
+
+/* Botón para cerrar el modal */
+.modal .btn-cerrar {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 40px;
+    right: 40px;
+    background: rgb(206, 69, 69);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal .btn-cerrar i {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 50px;
+}
+
+/* Efecto de rotación al pasar el mouse sobre el botón de cerrar */
+.modal .btn-cerrar i:hover {
+    transform: rotate(90deg);
+    transition: all 0.2s linear;
+}
+
+/* Estilos para las flechas de navegación del modal */
+.flecha-izquierda,
+.flecha-derecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.flecha-izquierda {
+    left: 10px;
+}
+
+.flecha-derecha {
+    right: 10px;
+}
+
+/* FOOTER */
+footer {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 2px solid #740101;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+a {
+    color: rgb(252, 144, 21);
+}
+footer .menuSecundario {
+    text-align: center;
+}
+
+footer .menuRRSS {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #8a0606;
+}
+
